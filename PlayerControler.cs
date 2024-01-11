@@ -61,13 +61,14 @@ public class PlayerControler : MonoBehaviour
     {
         if (transform.position.y > MaxY || transform.position.y < MinY)
         {
+            //Reiniciar level apos sair da tela
             SceneManager.LoadScene(0);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Reiniciar game apos perder
+        //Reiniciar level apos perder
         SceneManager.LoadScene(0); 
     }
 }
