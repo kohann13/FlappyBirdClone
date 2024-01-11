@@ -67,6 +67,7 @@ public class PlayerControler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Reiniciar game apos perder
         SceneManager.LoadScene(0); 
     }
 }
